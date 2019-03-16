@@ -12,59 +12,29 @@
     android:orientation="vertical">
 
     <!-- Next 6 edit texts are the color bars -->
-    <EditText android:id="@+id/colorbar_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:inputType="textNoSuggestions|textVisiblePassword"
-        android:imeOptions="actionDone"
-        android:hint="@string/hint"
-        android:textSize="@dimen/default_font_size"/>
+    <include
+        android:id="@+id/colorbar_1"
+        layout="@layout/colorbar" />
 
-    <EditText android:id="@+id/colorbar_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:inputType="textNoSuggestions|textVisiblePassword"
-        android:imeOptions="actionDone"
-        android:hint="@string/hint"
-        android:textSize="@dimen/default_font_size"/>
+    <include
+        android:id="@+id/colorbar_2"
+        layout="@layout/colorbar" />
 
-    <EditText android:id="@+id/colorbar_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:inputType="textNoSuggestions|textVisiblePassword"
-        android:imeOptions="actionDone"
-        android:hint="@string/hint"
-        android:textSize="@dimen/default_font_size"/>
+    <include
+        android:id="@+id/colorbar_3"
+        layout="@layout/colorbar" />
 
-    <EditText android:id="@+id/colorbar_4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:inputType="textNoSuggestions|textVisiblePassword"
-        android:imeOptions="actionDone"
-        android:hint="@string/hint"
-        android:textSize="@dimen/default_font_size"/>
+    <include
+        android:id="@+id/colorbar_4"
+        layout="@layout/colorbar" />
 
-    <EditText android:id="@+id/colorbar_5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:inputType="textNoSuggestions|textVisiblePassword"
-        android:imeOptions="actionDone"
-        android:hint="@string/hint"
-        android:textSize="@dimen/default_font_size"/>
+    <include
+        android:id="@+id/colorbar_5"
+        layout="@layout/colorbar" />
 
-    <EditText android:id="@+id/colorbar_6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:inputType="textNoSuggestions|textVisiblePassword"
-        android:imeOptions="actionDone"
-        android:hint="@string/hint"
-        android:textSize="@dimen/default_font_size"/>
+    <include
+        android:id="@+id/colorbar_6"
+        layout="@layout/colorbar" />
 
     <!-- Button to shuffle the colors -->
     <Button android:id="@+id/reset_button"
@@ -75,4 +45,5 @@
         android:text="@string/reset_button_label"
         android:textSize="@dimen/default_font_size"
         android:onClick="shuffle"/>
+
 </LinearLayout>

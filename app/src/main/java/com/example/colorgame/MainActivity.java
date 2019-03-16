@@ -111,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
         for(int barID : backgroundColors.keySet()) {
             String colorName = colorList.get(n % colorList.size());
             backgroundColors.put(barID, colorName);
+            TextView view = findViewById(barID);
+            view.setText("");
             n++;
         }
 
